@@ -7,7 +7,6 @@ Docker configuration for running a Pipe Network Node.
 - Docker and Docker Compose installed
 - At least 4GB RAM
 - At least 100GB free disk space
-- Port 8003 available
 - Linux operating system
 
 ## Quick Start
@@ -28,7 +27,7 @@ cp .env.example .env
 # Required settings
 SOLANA_WALLET=your_solana_wallet_address
 RAM_SIZE=8
-DISK_SIZE=200
+DISK_SIZE=100
 CACHE_DIR=./data
 ```
 
