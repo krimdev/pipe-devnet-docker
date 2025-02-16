@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  pipe-node:
+    build: .
+    container_name: pipe-node
+    environment:
+      - SOLANA_WALLET=${SOLANA_WALLET}
+      - RAM_SIZE=${RAM_SIZE}
+      - DISK_SIZE=${DISK_SIZE}
+      - CACHE_DIR=${CACHE_DIR}
+    volumes:
+      - ${CACHE_DIR}:/data
+      - node-config:/opt/pop
+    ports:
+      - "38003:8003"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: "${RAM_SIZE}G"
+        reservations:
+          memory: "${RAM_SIZE}G"
+
+volumes:
+  node-config:
