@@ -87,9 +87,6 @@ Node data is stored in two locations:
 - `DISK_SIZE`: Maximum disk usage in GB (recommended 200-500GB)
 - `CACHE_DIR`: Local directory for cache storage
 
-### Port
-
-The node uses port 8003 for data transfer. Make sure this port is accessible and not blocked by your firewall.
 
 ## Troubleshooting
 
