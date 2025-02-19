@@ -16,7 +16,7 @@ PIPE Network node v0.2.8+ requires ports 80, 443, and 8003 to be available. If y
 
 1. Clone this repository
 ```
-git clone https://github.com/krimdev/pipe-node-docker.git
+git clone https://github.com/krimdev/pipe-devnet-docker.git
 cd pipe-node-docker
 ```
 
