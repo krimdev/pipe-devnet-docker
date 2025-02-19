@@ -21,7 +21,7 @@ cd pipe-node-docker
 ```
 
 2. Edit the Dockerfile
-Replace YOUR_PUBLIC_KEY with your actual PIPE Network public key.
+Replace YOUR_PUBLIC_KEY with your actual solana adress.
 
 3. Build the Docker image
 ```
